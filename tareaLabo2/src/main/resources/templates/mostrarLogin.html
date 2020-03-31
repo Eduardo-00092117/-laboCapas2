@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel=StyleSheet href="../webapp/style.css" type="text/css" media=screen>
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" th:action="@{/validacion}" th:object='${usuario}' method="post">
+		<h1>Login</h1>
+		<label>Usuario: </labe0l> 
+		<input type="text" th:field="*{user}">
+		<br><br>
+		<label>Contraseña: </label>
+		<input type="password" th:field="*{password}">
+		<br>
+		<br>
+		<input id="boton" type="submit" value="Enviar">
+		<input id="boton" type="reset" value="Borrar">
+	</form>
+</body>
+</html>

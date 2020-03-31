@@ -14,6 +14,8 @@ public class MainController {
 		return "mostrarLogin";
 	}
 	
+	//Usuario: admin
+	//Contraseña: 123
 	@PostMapping("/validacion")
 	public String procesarForm(Usuario usuario) {
 		String form;
